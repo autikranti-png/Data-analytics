@@ -1,0 +1,200 @@
+📊 Sales & Revenue Analysis Dashboard
+
+An interactive Sales & Revenue Analysis Dashboard built using Microsoft Power BI to analyze sales performance, revenue trends, profitability, product performance, regional sales, and payment methods.
+
+📌 Project Overview
+
+This project transforms sales data into an interactive business intelligence dashboard. It provides a quick overview of important KPIs and helps identify sales trends, top-performing products, categories, and regions.
+
+The dashboard includes interactive Order Date, Region, Category, and Product slicers for dynamic analysis.
+
+🎯 Objectives
+
+Analyze overall sales and revenue performance
+
+Track total profit, orders, and quantity
+
+Identify monthly sales trends
+
+Find the top-performing products by sales
+
+Compare sales across different categories
+
+Analyze regional sales performance
+
+Understand sales distribution by payment mode
+
+Provide interactive filtering for business analysis
+
+📈 Key KPIs
+
+KPI
+
+Value
+
+Total Sales
+
+444.58M
+
+Total Profit
+
+71.69M
+
+Total Orders
+
+10K
+
+Total Quantity
+
+30K
+
+Average Order Value
+
+44.46K
+
+KPI values are based on the dataset used for this dashboard and may change when filters are applied.
+
+📊 Dashboard Features
+
+1. Monthly Sales Trends
+
+A line chart showing monthly sales performance and helping identify increases, decreases, and peak sales periods.
+
+2. Top 10 Products by Sales
+
+A horizontal bar chart highlighting the products generating the highest sales.
+
+3. Sales by Category
+
+A donut chart showing the contribution of different product categories to total sales.
+
+4. Sales by Region
+
+A bar chart comparing sales performance across different regions.
+
+5. Sales by Payment Mode
+
+A donut chart showing the distribution of sales across UPI, Credit Card, Cash, and Debit Card.
+
+6. Interactive Slicers
+
+The dashboard includes:
+
+📅 Order Date
+
+🌍 Region
+
+🏷️ Category
+
+📦 Product
+
+🛠️ Tools & Technologies
+
+Microsoft Power BI
+
+Power Query – Data cleaning and transformation
+
+DAX – KPI and analytical measures
+
+Excel / CSV – Data source
+
+Data Visualization – Interactive charts and dashboard design
+
+🧹 Data Preparation
+
+The dataset was prepared using Power Query:
+
+Removed duplicate rows
+
+Removed unnecessary columns
+
+Handled blank/null values
+
+Converted Order Date to Date format
+
+Converted Quantity to Whole Number
+
+Converted Sales and Profit to numeric/currency formats
+
+Renamed columns where required
+
+Verified data types and data quality
+
+🧮 DAX Measures
+
+Total Sales = SUM(Sales[Sales])
+
+Total Profit = SUM(Sales[Profit])
+
+Total Quantity = SUM(Sales[Quantity])
+
+Total Orders = DISTINCTCOUNT(Sales[Order_ID])
+
+Average Order Value = DIVIDE([Total Sales], [Total Orders])
+
+Replace table/column names with the actual names in your Power BI model if they differ.
+
+📂 Repository Structure
+
+Sales-Revenue-Analysis-Dashboard/
+│
+├── README.md
+├── Sales_Revenue_Analysis_Dashboard.pbix
+├── dataset/
+│   └── sales_data.csv
+├── screenshots/
+│   └── dashboard.png
+└── documentation/
+    └── project_notes.md
+
+🖥️ Dashboard Preview
+
+
+
+💡 Key Insights
+
+Electronics is the dominant sales category.
+
+Laptop is the top-performing product by sales.
+
+North has the highest regional sales among the displayed regions.
+
+UPI represents the largest share of sales by payment mode.
+
+Monthly sales fluctuate throughout the year, with October showing one of the strongest monthly performances.
+
+🚀 How to Use
+
+Download or clone this repository.
+
+Open Sales_Revenue_Analysis_Dashboard.pbix using Microsoft Power BI Desktop.
+
+If required, update the dataset source path.
+
+Refresh the data.
+
+Use the slicers to explore the dashboard interactively.
+
+📌 Project Outcome
+
+This project demonstrates practical skills in:
+
+Data cleaning and transformation
+
+Data modeling
+
+DAX calculations
+
+KPI development
+
+Data visualization
+
+Dashboard design
+
+Business intelligence
+
+Business insight generation
+
+👩‍💻 Author
+
+Kranti Auti
