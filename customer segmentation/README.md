@@ -1,4 +1,5 @@
 Customer Segmentation Project
+
 📌 Project Overview
 
 This project focuses on Customer Segmentation using Machine Learning and K-Means Clustering.
@@ -6,6 +7,7 @@ This project focuses on Customer Segmentation using Machine Learning and K-Means
 The main objective is to segment customers into different groups based on their demographic characteristics, purchasing behavior, spending patterns, engagement, and preferences.
 
 Customer segmentation helps businesses understand different types of customers and develop targeted marketing strategies, personalized offers, customer retention plans, and better business decisions.
+
 
 🎯 Objectives
 
@@ -22,6 +24,7 @@ Evaluate clustering using the Elbow Method and Silhouette Score.
 Visualize customer segments using PCA.
 Analyze the characteristics of each customer segment.
 Generate actionable business insights.
+
 📊 Dataset
 
 The project uses a synthetic dataset containing 1,000 customer records.
@@ -43,6 +46,7 @@ Location	Customer location
 MembershipLevel	Customer membership level
 DiscountUsagePercentage	Percentage of purchases using discounts
 SatisfactionScore	Customer satisfaction score
+
 🛠️ Technologies Used
 Python
 Jupyter Notebook
@@ -57,6 +61,7 @@ K-Means Clustering
 Elbow Method
 Silhouette Score
 Principal Component Analysis (PCA)
+
 📁 Project Structure
 Customer-Segmentation/
 │
@@ -67,6 +72,7 @@ Customer-Segmentation/
 ├── customer_segmentation_with_clusters.csv
 │
 └── README.md
+
 🔄 Project Workflow
 Dataset
    ↓
@@ -385,6 +391,7 @@ Evaluate clustering performance
 Use PCA for visualization
 Interpret customer segments
 Convert machine learning results into business insights
+
 🔮 Future Enhancements
 
 The project can be further improved by:
@@ -396,6 +403,7 @@ Adding customer lifetime value analysis
 Implementing RFM analysis
 Creating automated customer recommendations
 Deploying the segmentation model as a web application
+
 👩‍💻 Author
 
 Kranti Auti
