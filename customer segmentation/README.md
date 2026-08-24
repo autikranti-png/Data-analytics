@@ -30,50 +30,70 @@ Generate actionable business insights.
 The project uses a synthetic dataset containing 1,000 customer records.
 
 Dataset Features
+
 Feature	Description
+
 CustomerID	Unique customer identifier
+
 Age	Customer age
+
 Gender	Customer gender
+
 AnnualIncome	Annual customer income
+
 SpendingScore	Customer spending score
+
 PurchaseFrequency	Number/frequency of purchases
+
 AvgPurchaseAmount	Average purchase amount
+
 TotalPurchaseValue	Total purchase value
+
 OnlinePurchasePercentage	Percentage of online purchases
+
 RecencyDays	Days since recent purchase
+
 PreferredCategory	Customer's preferred product category
+
 Location	Customer location
+
 MembershipLevel	Customer membership level
+
 DiscountUsagePercentage	Percentage of purchases using discounts
+
 SatisfactionScore	Customer satisfaction score
 
 🛠️ Technologies Used
+
 Python
+
 Jupyter Notebook
+
 Pandas
+
 NumPy
+
 Matplotlib
+
 Seaborn
+
 Scikit-learn
+
 Machine Learning Techniques
+
 StandardScaler
+
 K-Means Clustering
+
 Elbow Method
+
 Silhouette Score
+
 Principal Component Analysis (PCA)
 
-📁 Project Structure
-Customer-Segmentation/
-│
-├── customer_segmentation_1000.csv
-│
-├── customer_segmentation_project.ipynb
-│
-├── customer_segmentation_with_clusters.csv
-│
-└── README.md
 
 🔄 Project Workflow
+
 Dataset
    ↓
 Data Loading
@@ -99,7 +119,9 @@ PCA Visualization
 Cluster Profiling
    ↓
 Business Insights
+
 🔍 Project Steps
+
 1. Data Loading
 
 The dataset is loaded using Pandas.
@@ -113,8 +135,11 @@ The dataset contains 1,000 customer records.
 The dataset is checked for:
 
 Missing values
+
 Duplicate records
+
 Incorrect data types
+
 Unnecessary data
 
 Duplicate records are removed and missing values are handled where required.
@@ -126,11 +151,17 @@ EDA is performed to understand customer behavior.
 The project analyzes:
 
 Age distribution
+
 Income distribution
+
 Spending score
+
 Gender distribution
+
 Preferred product categories
+
 Membership levels
+
 Correlation between numerical variables
 
 Various graphs and a correlation heatmap are used for visualization.
