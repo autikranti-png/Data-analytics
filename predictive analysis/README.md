@@ -1,89 +1,113 @@
 # 📊 Predictive Analytics Using Historical Data
 
+> A machine learning project that analyzes historical sales data, identifies trends and seasonal patterns, evaluates predictive models, and forecasts future sales.
+
+---
+
 ## 📌 Project Overview
 
-This project focuses on **Predictive Analytics using Historical Sales Data**. The main objective is to analyze historical sales patterns, identify trends and seasonality, build machine learning models, evaluate their performance, and forecast future sales.
+**Predictive Analytics Using Historical Data** is an end-to-end data science and machine learning project developed to demonstrate how historical business data can be transformed into meaningful insights and future predictions.
 
-The project demonstrates a complete data analytics and machine learning workflow using Python and Jupyter Notebook.
+The project uses a dataset containing **10,000 historical daily sales records**. The data is cleaned, explored, transformed, and used to build predictive regression models.
+
+Two machine learning approaches are implemented:
+
+- **Linear Regression**
+- **Random Forest Regression**
+
+The models are evaluated using standard regression metrics such as **MAE, MSE, RMSE, and R² Score**.
+
+Finally, the selected model is used to generate a **90-day future sales forecast**.
 
 ---
 
-## 🎯 Objectives
+## 🎯 Project Objectives
+
+The main objectives of this project are:
 
 - Analyze historical sales data.
-- Clean and preprocess the dataset.
+- Perform data cleaning and preprocessing.
 - Handle missing values and duplicate records.
-- Perform Exploratory Data Analysis (EDA).
-- Identify sales trends and seasonal patterns.
-- Create time-based features.
-- Build predictive regression models.
-- Evaluate model performance.
-- Compare different machine learning models.
-- Forecast future sales for 90 days.
-- Visualize actual, predicted, and forecasted sales.
+- Explore sales trends and patterns.
+- Analyze monthly and yearly sales behavior.
+- Identify seasonal patterns.
+- Perform feature engineering.
+- Build machine learning regression models.
+- Evaluate and compare model performance.
+- Generate future sales predictions.
+- Visualize historical, predicted, and forecasted sales.
+- Save the trained model using Pickle.
+- Provide business-oriented insights from the analysis.
 
 ---
 
-## 📂 Dataset
+## 🧩 Problem Statement
 
-The project uses a historical sales dataset containing **10,000 daily records**.
+Businesses collect large amounts of sales data every day. However, historical data becomes significantly more valuable when it can be used to predict future demand.
 
-### Dataset Features
+The problem addressed in this project is:
 
-| Column | Description |
-|---|---|
-| Date | Historical sales date |
-| Customers | Number of customers |
-| Quantity | Number of units sold |
-| Average_Price | Average selling price |
-| Promotion | Promotion indicator (0 = No, 1 = Yes) |
-| Sales | Sales amount / prediction target |
-| Profit | Profit generated |
+> **How can historical sales data be analyzed and used to build a predictive model capable of forecasting future sales?**
 
-### Dataset Period
-
-The dataset contains approximately **10,000 daily observations** covering multiple years of historical sales.
+The solution involves data preprocessing, exploratory data analysis, feature engineering, machine learning, model evaluation, and future forecasting.
 
 ---
 
-## 🛠️ Technologies Used
-
-- **Python**
-- **Jupyter Notebook**
-- **Pandas**
-- **NumPy**
-- **Matplotlib**
-- **Seaborn**
-- **Scikit-learn**
-- **Pickle**
-
----
-
-## 🔄 Project Workflow
+# 🔄 Project Workflow
 
 ```text
-Historical Sales Data
-        ↓
-Data Loading
-        ↓
-Data Cleaning
-        ↓
-Missing Value Handling
-        ↓
-Exploratory Data Analysis
-        ↓
-Trend & Seasonality Analysis
-        ↓
-Feature Engineering
-        ↓
-Train-Test Split
-        ↓
-Machine Learning Models
-        ↓
-Model Evaluation
-        ↓
-Model Comparison
-        ↓
-Future Sales Forecast
-        ↓
-Visualization & Insights
+                 ┌─────────────────────┐
+                 │ Historical Sales    │
+                 │ Data - 10,000 Rows  │
+                 └──────────┬──────────┘
+                            ↓
+                 ┌─────────────────────┐
+                 │ Data Loading        │
+                 └──────────┬──────────┘
+                            ↓
+                 ┌─────────────────────┐
+                 │ Data Cleaning       │
+                 │ & Preprocessing     │
+                 └──────────┬──────────┘
+                            ↓
+                 ┌─────────────────────┐
+                 │ Exploratory Data    │
+                 │ Analysis            │
+                 └──────────┬──────────┘
+                            ↓
+                 ┌─────────────────────┐
+                 │ Feature Engineering │
+                 └──────────┬──────────┘
+                            ↓
+                 ┌─────────────────────┐
+                 │ Train-Test Split    │
+                 │     80% / 20%       │
+                 └──────────┬──────────┘
+                            ↓
+              ┌─────────────┴─────────────┐
+              ↓                           ↓
+     ┌─────────────────┐        ┌──────────────────┐
+     │ Linear          │        │ Random Forest    │
+     │ Regression      │        │ Regression       │
+     └────────┬────────┘        └─────────┬────────┘
+              ↓                           ↓
+              └─────────────┬─────────────┘
+                            ↓
+                 ┌─────────────────────┐
+                 │ Model Evaluation    │
+                 │ MAE / MSE / RMSE/R²│
+                 └──────────┬──────────┘
+                            ↓
+                 ┌─────────────────────┐
+                 │ Model Comparison    │
+                 └──────────┬──────────┘
+                            ↓
+                 ┌─────────────────────┐
+                 │ Future Sales        │
+                 │ Forecast - 90 Days  │
+                 └──────────┬──────────┘
+                            ↓
+                 ┌─────────────────────┐
+                 │ Insights &          │
+                 │ Visualization       │
+                 └─────────────────────┘
